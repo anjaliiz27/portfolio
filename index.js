@@ -1,0 +1,16 @@
+const navLinks=document.querySelectorAll("nav href");
+
+for(var i=0;i<navLinks.length;i++){
+   document.querySelectorAll("nav href")[i].addEventListener("click",function(event){
+    event.preventDefault();
+
+     const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+
+        if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+})
+}
+
+

@@ -1,0 +1,194 @@
+body{
+    background-color:rgb(235, 235, 235);
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(40, 40, 43);
+    width: 100%;
+    padding: 1.8rem ;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    z-index:100;
+}
+
+.logo{
+    text-decoration: none;
+    font-family:Montserrat;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgb(235, 235, 235);
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    color: rgb(110, 49, 231);
+}
+.navbar a:hover{
+    color:rgb(110, 49, 231);
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(222, 220, 220);
+    font-family: Montserrat;
+    font-size: 1.07rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+.home{
+    height: 100vh;
+   display: flex;
+   justify-content: center;  /* horizontal center */
+  align-items: center;
+   font-family: Poppins;
+   font-weight:300;
+}
+
+.intro{
+    padding:2rem;
+}
+
+.home h2{
+    font-size: 88px;
+    font-weight:400;
+    margin-bottom: 0.5rem;
+}
+
+.home span{
+    color: rgb(73, 11, 197);
+}
+
+.home img{
+    position: relative;
+    transform: scale(0.8);
+    border-radius: 23%;
+}
+
+@media (max-width: 600px) {
+  .home {
+    flex-direction: column-reverse;
+    align-items: center;
+    
+  }
+  .home img{
+    transform: scale(0.6);
+    margin-top:400px;
+  }
+  .intro h2{
+     font-size:5rem;
+     margin-top: 0dvh;
+  }
+}
+
+.about,.mywork,.contact{
+    height: 100vh;
+    font-family: Poppins;
+    font-weight:300;
+    font-size: 1.3rem;
+    padding:4rem;
+    justify-content: center;  /* horizontal center */
+    align-items: center;
+    margin-top: 100px;
+}
+
+h3{
+    color: rgb(73, 11, 197);
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+
+.about h4,.mywork h4{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+
+.mywork-container{
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.mywork-box{
+    flex: 1 1 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(195, 173, 215);
+}
+
+.mywork-box:hover{
+    background-color:  rgb(175, 146, 201);
+    transform: scale(1.06);
+}
+
+.contact a:hover{
+    transform: scale(1.1);
+
+}
+
+.fillinfo{
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    margin-top: -300px;
+}
+.fillinfo-container{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+}
+label{
+    font-family:Montserrat ;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+input{
+    width: 90%;
+    height: 60px;
+    border:0;
+}
+button{
+    border: 0;
+    background-color: rgb(195, 173, 215);
+    margin-top: 2rem;
+    height:30px;
+    width: 70px;
+    border-radius:8%;
+    font-family:Montserrat ;
+    font-weight: 500;
+}
+
+button:hover{
+    background-color:rgb(216, 199, 231) ;
+}
+
+@media (max-width: 600px) {
+  .about,.mywork,.contact{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 500px;
+  }
+  .fillinfo{
+     flex-direction: column;
+    align-items: center;
+    margin-top: -200px;
+  }
+  }
+
+
