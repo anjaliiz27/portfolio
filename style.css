@@ -70,18 +70,30 @@ nav a{
 }
 
 @media (max-width: 600px) {
+    header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav a {
+    margin: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
   .home {
     flex-direction: column-reverse;
     align-items: center;
-    
+    height: 100vh;
+    padding: 1rem 1rem;
+    text-align: center;
   }
   .home img{
-    transform: scale(0.6);
-    margin-top:400px;
+    transform: scale(0.5);
+    margin-top:2rem;
   }
   .intro h2{
-     font-size:4.6rem;
-     margin-top: 0dvh;
+     font-size:2.6rem;
+     margin-top:-5rem;
   }
 }
 
@@ -179,17 +191,23 @@ button:hover{
 }
 
 @media (max-width: 600px) {
-  .about,.mywork,.fillinfo{
+
+  .about,.mywork,.fillinfo,.contact{
+    height: auto;
     flex-direction: column;
-    align-items: center;
-    margin-top: 500px;
+    align-items:center;
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+    text-align: center;
   }
-.contact{
+
+  .mywork-container {
     flex-direction: column;
-    align-items: center;
-    margin-top: 800px;
+    gap: 1.5rem;
+
+  }
+  .mywork-box {
+    flex: 1 1 30%;
   }
 }
-
-
-
