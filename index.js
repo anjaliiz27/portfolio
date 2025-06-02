@@ -1,3 +1,5 @@
+console.log("Hello!,loading Sree Geetanjali's portfolio");
+
 const navLinks=document.querySelectorAll("nav href");
 
 for(var i=0;i<navLinks.length;i++){
