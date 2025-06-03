@@ -15,4 +15,12 @@ for(var i=0;i<navLinks.length;i++){
 })
 }
 
+document.querySelector("button").addEventListener("click", function(event){
+    event.preventDefault();
+    alert("submitted succesfully!");
+     document.getElementById("name").value=" ";
+     document.getElementById("email").value=" ";
+     document.getElementById("message").value=" ";
+  
+})
 
