@@ -1,5 +1,6 @@
 console.log("Hello!,loading Sree Geetanjali's portfolio");
 
+document.addEventListener("DOMContentLoaded", function() {
 const navLinks=document.querySelectorAll("nav href");
 
 for(var i=0;i<navLinks.length;i++){
@@ -24,3 +25,4 @@ document.querySelector("button").addEventListener("click", function(event){
   
 })
 
+})
